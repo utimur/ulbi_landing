@@ -1,0 +1,113 @@
+header {
+  background-color: black;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+header .header-flex {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  color: white;
+  margin: 0 50px;
+}
+header .header-flex .name {
+  font-size: 24px;
+  font-weight: 500;
+  opacity: 0.69;
+  margin-right: auto;
+  margin-left: 20px;
+}
+header .header-flex .header-anchor {
+  opacity: 0.69;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+header .header-flex .header-anchor a {
+  color: inherit;
+}
+article {
+  width: 100%;
+  z-index: 10;
+}
+article .main-flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+article .main-flex .photo {
+  width: 100%;
+  background-image: url("../img/myphoto.jpg");
+  background-size: auto;
+  height: 100vh;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+article .main-flex .discription {
+  padding: 50px;
+  color: black;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  border-bottom: solid 3px ;
+  opacity: 0.85;
+}
+article .main-flex .discription span {
+  color: #f09700;
+}
+article .main-flex .discription p:first-child,
+article .main-flex .discription p:last-child {
+  font-size: 36px;
+  font-weight: 700;
+}
+article .main-flex .skills {
+  background: lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+article .main-flex .skills-wrap {
+  width: 40%;
+  margin: 30px;
+  text-align: center;
+}
+footer {
+  height: 180px;
+  background-color: black;
+  color: white ;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .footer-flex {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 50px;
+}
+footer .footer-flex .social {
+  width: 30%;
+}
+footer .footer-flex .social span {
+  border-bottom: white solid 1px;
+}
+footer .footer-flex .contacts {
+  width: 30%;
+  opacity: 0.69;
+}
+footer .footer-flex .contacts span {
+  border-bottom: white solid 1px;
+}
+footer .footer-flex .info-about-me {
+  width: 30%;
+  opacity: 0.69;
+}
+footer .footer-flex .info-about-me span {
+  border-bottom: white solid 1px;
+}
+/*# sourceMappingURL=style.css.map */
