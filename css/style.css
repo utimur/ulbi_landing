@@ -25,21 +25,26 @@ header .header-flex .header-anchor {
   margin-right: 20px;
 }
 header .header-flex .header-anchor a {
+  transition-property: font-size;
+  transition-duration: 1s;
   color: inherit;
 }
-article {
+main {
   width: 100%;
   z-index: 10;
 }
-article .main-flex {
+main .main-flex {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-article .main-flex .photo {
+main .main-flex .photo {
   width: 100%;
   background-image: url("../img/myphoto.jpg");
   background-size: auto;
+  opacity: 0.1;
+  transition-property: opacity;
+  transition-duration: 3s;
   height: 100vh;
   margin: 0;
   background-repeat: no-repeat;
@@ -49,7 +54,7 @@ article .main-flex .photo {
   -o-background-size: cover;
   background-size: cover;
 }
-article .main-flex .discription {
+main .main-flex .discription {
   padding: 50px;
   color: black;
   font-weight: 500;
@@ -58,32 +63,54 @@ article .main-flex .discription {
   border-bottom: solid 3px ;
   opacity: 0.85;
 }
-article .main-flex .discription span {
+main .main-flex .discription span {
   color: #f09700;
 }
-article .main-flex .discription p:first-child,
-article .main-flex .discription p:last-child {
+main .main-flex .discription p:first-child,
+main .main-flex .discription p:last-child {
   font-size: 36px;
   font-weight: 700;
 }
-article .main-flex .skills {
+main .main-flex .projects {
+  display: flex;
+}
+main .main-flex .projects-my {
+  padding: 50px;
+  width: 100%;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+main .main-flex .skills {
   background: lightgray;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
-article .main-flex .skills-my {
+main .main-flex .skills-my {
   padding: 50px;
   width: 100%;
   text-align: center;
   font-size: 50px;
   font-weight: 700;
 }
-article .main-flex .skills-wrap {
+main .main-flex .skills .skills-box {
   width: 40%;
   margin: 30px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+main .main-flex .skills .skills-box .skills-wrap {
+  width: 196px;
+  height: 196px;
+  transition-property: height, width;
+  transition-duration: 2s;
+}
+main .main-flex .skills .skills-box .skills-wrap img {
+  width: 100%;
+  height: 100%;
 }
 footer {
   height: 180px;

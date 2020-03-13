@@ -11,61 +11,87 @@
 <header>
     <div class="header-flex">
         <div class="name">Ульби Тимур</div>
-        <div class="header-anchor"><a href="#discription">Обо мне</a></div>
-        <div class="header-anchor"><a href="#skills">Навыки</a></div>
-        <div class="header-anchor"><a>Проекты</a></div>
-        <div class="header-anchor"><a>Контакты</a></div>
+        <div class="header-anchor"><a href="#discription" id="about-link">Обо мне</a></div>
+        <div class="header-anchor"><a href="#skills" id="skills-link">Навыки</a></div>
+        <div class="header-anchor"><a id="projects-link">Проекты</a></div>
+        <div class="header-anchor"><a id="contacts-link">Контакты</a></div>
     </div>
 </header>
 
 <nav>Меню навигации</nav>
 
 
-<article>
+<main>
     <div class="main-flex">
-        <div class="photo"></div>
+        <div class="photo" id="photo"></div>
         <div class="discription" id="discription">
             <p>Меня зовут <span>Ульби Тимур</span></p>
             <p> Я <span>junior fullstack</span> web-разработчик</p>
             <p> <span>Студент</span> 3-го курса факультета "<span>Программная</span> инженерия"</p>
             <p> Добро пожаловать на <span>мою</span> страницу</p>
         </div>
+
+
         <div class="skills" id="skills">
             <div class="skills-my">Мои навыки</div>
-            <div class="skills-wrap">
-                <img src="img/react.png" width="196" height="196" alt="">
+            <div class="skills-box">
+                <div class="skills-wrap" id="react">
+                    <img src="img/react.png"  alt="">
+                </div>
             </div>
-            <div class="skills-wrap">
-                <img src="img/redux.png" width="196" height="196" alt="">
+            <div class="skills-box">
+                <div class="skills-wrap" id="redux">
+                    <img src="img/redux.png"  alt="">
+                </div>
             </div>
-            <div class="skills-wrap">
-                <img src="img/js.png" width="196" height="196" alt="">
+            <div class="skills-box">
+                <div class="skills-wrap" id="javascript">
+                    <img src="img/js.png"  alt="">
+                </div>
             </div>
-            <div class="skills-wrap">
-                <img src="img/java.png" width="196" height="196" alt="">
+            <div class="skills-box">
+                <div class="skills-wrap" id="java">
+                    <img src="img/java.png" alt="">
+                </div>
             </div>
-            <div class="skills-wrap">
-                <img src="img/css.png" width="196" height="196" alt="">
+            <div class="skills-box">
+                <div class="skills-wrap" id="css">
+                    <img src="img/css.png"  alt="">
+                </div>
             </div>
-            <div class="skills-wrap">
-                <img src="img/spring.png" width="196" height="196" alt="">
+            <div class="skills-box">
+                <div class="skills-wrap" id="spring">
+                    <img src="img/spring.png"  alt="">
+                </div>
             </div>
-            <div class="skills-wrap">
-                <img src="img/python.png" width="196" height="196" alt="">
+            <div class="skills-box">
+                <div class="skills-wrap" id="python">
+                    <img src="img/python.png"  alt="">
+                </div>
             </div>
-            <div class="skills-wrap">
-                <img src="img/flask.png" width="196" height="196" alt="">
+            <div class="skills-box">
+                <div class="skills-wrap" id="flask">
+                    <img src="img/flask.png"  alt="">
+                </div>
             </div>
-            <div class="skills-wrap">
-                <img src="img/linux.png" width="196" height="196" alt="">
+            <div class="skills-box">
+                <div class="skills-wrap" id="linux">
+                    <img src="img/linux.png" alt="">
+                </div>
             </div>
-            <div class="skills-wrap">
-                <img src="img/sql.png" width="196" height="196" alt="">
+            <div class="skills-box">
+                <div class="skills-wrap" id="sql">
+                    <img src="img/sql.png"  alt="">
+                </div>
             </div>
+        </div>
 
+        <div class="projects">
+            <div class="projects-my">Проекты, над которыми я работал</div>
         </div>
     </div>
-</article>
+    </div>
+</main>
 
 <footer>
     <div class="footer-flex">
@@ -93,5 +119,9 @@
     </div>
 </footer>
 
+
+<script src="./js/index.js"></script>
+<script src="./js/header.js"></script>
+<script src="./js/footer.js"></script>
 </body>
 </html>
