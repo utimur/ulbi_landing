@@ -73,6 +73,13 @@ article .main-flex .skills {
   justify-content: center;
   flex-wrap: wrap;
 }
+article .main-flex .skills-my {
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+}
 article .main-flex .skills-wrap {
   width: 40%;
   margin: 30px;
