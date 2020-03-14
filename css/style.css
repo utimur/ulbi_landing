@@ -103,7 +103,16 @@ main .main-flex .skills .skills-box {
   margin: 30px;
   text-align: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main .main-flex .skills .skills-box .skills-discription {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px 0;
+  opacity: 0;
+  transition: opacity 1500ms;
+  height: 0;
 }
 main .main-flex .skills .skills-box .skills-wrap {
   width: 196px;
@@ -146,5 +155,23 @@ footer .footer-flex .info-about-me {
 }
 footer .footer-flex .info-about-me span {
   border-bottom: white solid 1px;
+}
+@media only screen and (max-width: 768px) {
+  .main-flex #skills .skills-box {
+    width: 30%;
+  }
+  .main-flex #skills .skills-box .skills-wrap {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .main-flex #skills .skills-box {
+    width: 100%;
+  }
+  .main-flex #skills .skills-box .skills-wrap {
+    width: 120px;
+    height: 120px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
