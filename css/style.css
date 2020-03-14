@@ -29,6 +29,9 @@ header .header-flex .header-anchor a {
   transition-duration: 1s;
   color: inherit;
 }
+header .header-flex .header-anchor a:hover {
+  text-decoration: none;
+}
 main {
   width: 100%;
   z-index: 10;
