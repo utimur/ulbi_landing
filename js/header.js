@@ -6,7 +6,7 @@ const contacts = document.getElementById("contacts-link")
 function linkAnim(link) {
     const fontsize = link.style.fontSize
     link.onmouseover = () => {
-        link.style.fontSize = '24px'
+        link.style.fontSize = '20px'
     }
     link.onmouseout = () => {
         link.style.fontSize = fontsize

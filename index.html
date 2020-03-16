@@ -14,8 +14,8 @@
         <div class="name">Ульби Тимур</div>
         <div class="header-anchor"><a href="#discription" id="about-link">Обо мне</a></div>
         <div class="header-anchor"><a href="#skills" id="skills-link">Навыки</a></div>
-        <div class="header-anchor"><a id="projects-link">Проекты</a></div>
-        <div class="header-anchor"><a id="contacts-link">Контакты</a></div>
+        <div class="header-anchor"><a href="#projects" id="projects-link">Проекты</a></div>
+        <div class="header-anchor"><a href="#contacts" id="contacts-link">Контакты</a></div>
     </div>
 </header>
 
@@ -97,16 +97,46 @@
             </div>
         </div>
 
-        <div class="projects">
+        <div class="projects" id="projects">
             <div class="projects-my">Проекты, над которыми я работал</div>
             <div class="projects-wrap">
-                <div class="projects-wrap-discription"></div>
+                <div class="projects-wrap-name">Home.io - платформа для интернета вещей</div>
+                <div class="projects-logo">
+                    <img src="./img/homeio/logo512.png" width="350" height="350" alt="">
+                    <div class="projects-wrap-description">
+                        <p>Интернет вещей – это полностью автоматизированный цикл работы приборов и систем за счет их подключения к беспроводной сети.
+                            Простыми словами: понятие интернета вещей предполагает взаимодействие по схеме «машина – машина» с минимальным участием человека.</p>
+                        <p>Однако для разработки в этой области программисту необходимо обладать большим количеством знаний из разных сфер (Разработка клиент-серверной части, сетевые технологии, программирование микроконтроллеров). Идея концепции «платформа для интернета вещей Home.io» такова, что программисту, для того чтобы войти в мир интернета вещей, необходимо знать лишь язык программирования Python на базовом уровне.</p>
+                    </div>
+                </div>
+                <div class="projects-wrap-presentation">
+                    <button class="projects-btn" id="homeio-left-button"><---</button>
+                    <img id="homeio-img-1" src="./img/homeio/1.jpg" alt="" height="128" width="128">
+                    <img id="homeio-img-2" src="./img/homeio/1.jpg" alt="" height="512" width="512">
+                    <img id="homeio-img-3" src="./img/homeio/2.jpg" alt="" height="128" width="128">
+                    <button class="projects-btn" id="homeio-right-button">---></button>
+                </div>
             </div>
             <div class="projects-wrap">
-                <div class="projects-wrap-discription"></div>
+                 <div class="projects-wrap-name">LunGO - мобильное приложение "Мессенджер"</div>
+                <div class="projects-logo">
+                    <img src="./img/lungo/logo.jpg" width="350" height="350" alt="">
+                    <div class="projects-wrap-description">
+                        <p>Приложение даёт возможность пользователю работать с сообщениями, работать с контактами, создавать групповые чаты, получать уведомления о новом сообщении, изменять личные данные.</p>
+                        <p> Плюсы программы: интуитивно понятный интерфейс; кэширование основной информации, в результате чего уменьшается использование трафика; озвучивание текстовых сообщение для пользователей, нуждающихся в этом; использование быстрой базы данных, многопользовательские чаты. Минусы: необходимость наличия постоянного интернета.</p>
+                    </div>
+                </div>
+
+                <div class="projects-wrap-presentation">
+                    <button class="projects-btn" id="lungo-left-button"><---</button>
+                    <img id="lungo-img-1" src="./img/lungo/1.jpg" alt="" height="128" width="128">
+                    <img id="lungo-img-2" src="./img/lungo/1.jpg" alt="" height="512" width="512">
+                    <img id="lungo-img-3" src="./img/lungo/2.jpg" alt="" height="128" width="128">
+                    <button class="projects-btn" id="lungo-right-button">---></button>
+                </div>
             </div>
             <div class="projects-wrap">
-                <div class="projects-wrap-discription"></div>
+                <div class="projects-wrap-name"></div>
             </div>
         </div>
     </div>
@@ -115,26 +145,29 @@
 
 
 <footer>
-    <div class="footer-flex">
+    <div class="footer-flex" id="contacts">
         <div class="info-about-me">
-            <div class="first-col"><span>Общая информация</span></div>
+            <div class="first-col"><span class="footer-header">Общая информация</span></div>
             <div class="first-col"><a>Обо мне</a></div>
             <div class="first-col"><a>Навыки</a></div>
             <div class="first-col"><a>Проекты</a></div>
             <div class="first-col"><a>Контакты</a></div>
         </div>
         <div class="contacts">
-            <div class="first-col"><span>Контактные данные</span></div>
+            <div class="first-col"><span class="footer-header">Контактные данные</span></div>
             <div class="first-col"><a href="https://github.com/utimur" target="_blank">https://github.com/utimur</a></div>
             <div class="first-col">+79670550910</div>
             <div class="first-col">+79054364228</div>
             <div class="first-col">akva_ten@mail.ru</div>
         </div>
         <div class="social">
-            <div class="first-col"><span>Социальные сети</span></div>
+            <div class="first-col"><span class="footer-header">Социальные сети</span></div>
             <div class="social-flex">
-                <img src="img/instagram.png" width="50" height="50" alt="">
-                <img src="img/VK.png" width="50" height="50" alt="">
+                <a href="https://www.instagram.com/timau07/" target="_blank"><img src="img/instagram.png" width="50" height="50" alt=""></a>
+                <a href="https://www.vk.com/tim077" target="_blank"><img src="img/VK.png" width="50" height="50" alt=""></a>
+                <a href="https://github.com/utimur" target="_blank"><img src="img/github.png" width="50" height="50" alt=""></a>
+                <a href="mailto:akva_ten@mail.ru" target="_blank"><img src="img/mail.png" width="50" height="50" alt=""></a>
+                <a href="https://profi.ru/profile/UlbiTV/"  target="_blank"><img src="img/profi.png" width="50" height="50" alt=""></a>
             </div>
         </div>
     </div>
@@ -144,5 +177,6 @@
 <script src="./js/index.js"></script>
 <script src="./js/header.js"></script>
 <script src="./js/footer.js"></script>
+<script src="js/presentation.js"></script>
 </body>
 </html>

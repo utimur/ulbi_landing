@@ -16,13 +16,11 @@ header {
     .name{
       font-size: 24px;
       font-weight: 500;
-      opacity: 0.69;
       margin-right: auto;
       margin-left: 20px;
     }
 
     .header-anchor{
-      opacity: 0.69;
       margin-left: 20px;
       margin-right: 20px;
       a{
@@ -79,13 +77,70 @@ main{
 
     .projects{
       display: flex;
+      flex-direction: column;
       &-my{
         padding: 50px;
         width: 100%;
         text-align: center;
-        font-size: 50px;
+        font-size: 75px;
         font-weight: 700;
-        text-align: center;
+      }
+      &-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .projects-logo{
+        img{
+          float: left;
+        }
+        padding: 0 @container-margin;
+        width: 80%;
+      }
+
+        &-name{
+          font-size: 45px;
+          font-weight: 500;
+          margin: 50px 0;
+          text-align: center;
+        }
+        &-description{
+          font-size: 16px;
+          font-weight: 500;
+          text-align: center;
+          margin: 20px;
+          ul{
+            list-style: none;
+          }
+        }
+        &-presentation{
+          width: 100%;
+          border-bottom: black solid 3px;
+          border-top: black solid 3px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 60px 0;
+          .projects-btn{
+            border-radius: 100px;
+            background-color: #f09700;
+            color: white;
+            text-align: center;
+            border: none;
+            padding: 20px;
+            visibility: hidden;
+            display: none;
+          }
+          #homeio-img-1{
+            visibility: hidden;
+          }
+          #lungo-img-1{
+            visibility: hidden;
+          }
+          img{
+            margin: 20px;
+            transition: width 1000ms, height 1000ms;
+          }
+        }
       }
     }
 
@@ -99,7 +154,7 @@ main{
         padding: 50px;
         width: 100%;
         text-align: center;
-        font-size: 50px;
+        font-size: 75px;
         font-weight: 700;
       }
       .skills-box {
@@ -136,36 +191,36 @@ main{
 }
 
 footer{
-
-
   height: 180px;
   background-color: black;
   color: white ;
   font-size: 16px;
   font-weight: 400;
+
   .footer-flex{
     display: flex;
     justify-content: flex-start;
-    padding:0 @container-margin;
+    padding:10px @container-margin;
+    .footer-header {
+      margin-bottom: 15px;
+      font-size: 20px;
+      display: block;
+      font-weight: 700;
+      opacity: 1;
+    }
     .social{
       width: 30%;
-      span{
-        border-bottom: white solid 1px;
-      }
+
     }
     .contacts{
       width: 30%;
-      opacity: 0.69;
-      span{
-        border-bottom: white solid 1px;
+      a{
+        color: inherit;
       }
     }
     .info-about-me{
       width: 30%;
-      opacity: 0.69;
-      span{
-        border-bottom: white solid 1px;
-      }
+
     }
   }
 }
@@ -182,9 +237,30 @@ footer{
         }
       }
     }
+    .projects{
+      &-wrap{
+        &-presentation{
+          img{
+            width: 64px;
+            height: 64px;
+            margin: 10px;
+          }
+          #homeio-img-2{
+            width: 192px;
+            height: 192px;
+          }
+          #lungo-img-2{
+            width: 192px;
+            height: 192px;
+          }
+        }
+      }
+    }
   }
 }
-@media only screen and (max-width: 300px){
+
+
+@media only screen and (max-width: 375px){
   .main-flex{
     #skills{
       .skills-box {
@@ -195,5 +271,25 @@ footer{
         }
       }
     }
+    .projects{
+      &-wrap{
+        &-presentation{
+          img{
+            width: 52px;
+            height: 52px;
+            margin: 5px;
+          }
+          #homeio-img-2{
+            width: 168px;
+            height: 168px;
+          }
+          #lungo-img-2{
+            width: 168px;
+            height: 168px;
+          }
+        }
+      }
+    }
+
   }
 }

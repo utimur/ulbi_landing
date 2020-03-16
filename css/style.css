@@ -15,12 +15,10 @@ header .header-flex {
 header .header-flex .name {
   font-size: 24px;
   font-weight: 500;
-  opacity: 0.69;
   margin-right: auto;
   margin-left: 20px;
 }
 header .header-flex .header-anchor {
-  opacity: 0.69;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -76,13 +74,70 @@ main .main-flex .discription p:last-child {
 }
 main .main-flex .projects {
   display: flex;
+  flex-direction: column;
 }
 main .main-flex .projects-my {
   padding: 50px;
   width: 100%;
-  font-size: 50px;
-  font-weight: 700;
   text-align: center;
+  font-size: 75px;
+  font-weight: 700;
+}
+main .main-flex .projects-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .main-flex .projects-wrap .projects-logo {
+  padding: 0 50px;
+  width: 80%;
+}
+main .main-flex .projects-wrap .projects-logo img {
+  float: left;
+}
+main .main-flex .projects-wrap-name {
+  font-size: 45px;
+  font-weight: 500;
+  margin: 50px 0;
+  text-align: center;
+}
+main .main-flex .projects-wrap-description {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin: 20px;
+}
+main .main-flex .projects-wrap-description ul {
+  list-style: none;
+}
+main .main-flex .projects-wrap-presentation {
+  width: 100%;
+  border-bottom: black solid 3px;
+  border-top: black solid 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+main .main-flex .projects-wrap-presentation .projects-btn {
+  border-radius: 100px;
+  background-color: #f09700;
+  color: white;
+  text-align: center;
+  border: none;
+  padding: 20px;
+  visibility: hidden;
+  display: none;
+}
+main .main-flex .projects-wrap-presentation #homeio-img-1 {
+  visibility: hidden;
+}
+main .main-flex .projects-wrap-presentation #lungo-img-1 {
+  visibility: hidden;
+}
+main .main-flex .projects-wrap-presentation img {
+  margin: 20px;
+  transition: width 1000ms, height 1000ms;
 }
 main .main-flex .skills {
   background: lightgray;
@@ -95,7 +150,7 @@ main .main-flex .skills-my {
   padding: 50px;
   width: 100%;
   text-align: center;
-  font-size: 50px;
+  font-size: 75px;
   font-weight: 700;
 }
 main .main-flex .skills .skills-box {
@@ -134,27 +189,26 @@ footer {
 footer .footer-flex {
   display: flex;
   justify-content: flex-start;
-  padding: 0 50px;
+  padding: 10px 50px;
+}
+footer .footer-flex .footer-header {
+  margin-bottom: 15px;
+  font-size: 20px;
+  display: block;
+  font-weight: 700;
+  opacity: 1;
 }
 footer .footer-flex .social {
   width: 30%;
 }
-footer .footer-flex .social span {
-  border-bottom: white solid 1px;
-}
 footer .footer-flex .contacts {
   width: 30%;
-  opacity: 0.69;
 }
-footer .footer-flex .contacts span {
-  border-bottom: white solid 1px;
+footer .footer-flex .contacts a {
+  color: inherit;
 }
 footer .footer-flex .info-about-me {
   width: 30%;
-  opacity: 0.69;
-}
-footer .footer-flex .info-about-me span {
-  border-bottom: white solid 1px;
 }
 @media only screen and (max-width: 768px) {
   .main-flex #skills .skills-box {
@@ -164,14 +218,40 @@ footer .footer-flex .info-about-me span {
     width: 120px;
     height: 120px;
   }
+  .main-flex .projects-wrap-presentation img {
+    width: 64px;
+    height: 64px;
+    margin: 10px;
+  }
+  .main-flex .projects-wrap-presentation #homeio-img-2 {
+    width: 192px;
+    height: 192px;
+  }
+  .main-flex .projects-wrap-presentation #lungo-img-2 {
+    width: 192px;
+    height: 192px;
+  }
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 375px) {
   .main-flex #skills .skills-box {
     width: 100%;
   }
   .main-flex #skills .skills-box .skills-wrap {
     width: 120px;
     height: 120px;
+  }
+  .main-flex .projects-wrap-presentation img {
+    width: 52px;
+    height: 52px;
+    margin: 5px;
+  }
+  .main-flex .projects-wrap-presentation #homeio-img-2 {
+    width: 168px;
+    height: 168px;
+  }
+  .main-flex .projects-wrap-presentation #lungo-img-2 {
+    width: 168px;
+    height: 168px;
   }
 }
 /*# sourceMappingURL=style.css.map */
