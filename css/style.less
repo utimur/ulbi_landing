@@ -19,7 +19,10 @@ header {
       margin-right: auto;
       margin-left: 20px;
     }
-
+    .header-btn{
+      background:none;
+      border: none;
+    }
     .header-anchor{
       margin-left: 20px;
       margin-right: 20px;
@@ -35,6 +38,34 @@ header {
   }
 }
 
+
+
+nav{
+  z-index: 25;
+  position: sticky;
+  .menu {
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    margin-top: @header-height;
+    background: black;
+    transition: 1s;
+    transform: translateX(-100%);
+    &-flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      a {
+        font-size: 30px;
+        color: white;
+      }
+    }
+  }
+}
+
+
+
 main{
   width: 100%;
   z-index: 10;
@@ -45,7 +76,6 @@ main{
     .photo{
       width: 100%;
       background-image: url("../img/myphoto.jpg");
-      background-size: auto;
       opacity: 0.1;
       transition-property: opacity;
       transition-duration: 3s;
@@ -218,12 +248,13 @@ footer{
       font-size: 20px;
       display: block;
       font-weight: 700;
-      opacity: 1;
     }
     .social{
       width: 30%;
       img{
         padding: 2px;
+        width: 50px;
+        height: 50px;
       }
 
     }
@@ -243,8 +274,19 @@ footer{
 
 @media only screen and (max-width: 768px){
   @container-margin = 0;
+  header{
+    .header-anchor{
+      display: none;
+    }
+    .header-flex{
+      margin: 0 5px;
+    }
+  }
   .main-flex{
     #skills{
+      .skills-my{
+        font-size: 40px;
+      }
       .skills-box {
         width: 30%;
         .skills-wrap {
@@ -255,11 +297,13 @@ footer{
     }
     .projects{
       &-my{
-        font-size: 50px !important;
+        font-size: 40px !important;
       }
       &-wrap{
         padding: 0;
-
+        &-name{
+          font-size: 35px !important;
+        }
       }
       &-logo{
         padding: 0;
@@ -267,9 +311,24 @@ footer{
       }
     }
   }
+  nav{
+    .menu{
+      width: 50%;
+    }
+  }
   footer{
     .info-about-me{
       display: none;
+    }
+    .contacts{
+      display: none;
+    }
+    .social {
+      width: 100% !important;
+      img{
+        width: 40px !important;
+        height: 40px !important;
+      }
     }
   }
 }
@@ -294,6 +353,14 @@ footer{
 
   }
 
+  nav{
+    .menu{
+
+      a{
+        font-size: 20px;
+      }
+    }
+  }
 
   footer{
     .footer-flex{

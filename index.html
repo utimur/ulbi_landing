@@ -7,19 +7,30 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body id="body">
 
 <header>
     <div class="header-flex">
+        <button class="header-btn" id="menu-btn"><img src="img/header-btn.png" width="50" height="50"></button>
         <div class="name">Ульби Тимур</div>
         <div class="header-anchor"><a href="#discription" id="about-link">Обо мне</a></div>
         <div class="header-anchor"><a href="#skills" id="skills-link">Навыки</a></div>
         <div class="header-anchor"><a href="#projects" id="projects-link">Проекты</a></div>
         <div class="header-anchor"><a href="#contacts" id="contacts-link">Контакты</a></div>
+
     </div>
 </header>
 
-<nav>Меню навигации</nav>
+<nav>
+    <div class="menu" id="menu">
+        <div class="menu-flex">
+            <div class="header-anchor"><a href="#discription" >Обо мне</a></div>
+            <div class="header-anchor"><a href="#skills" >Навыки</a></div>
+            <div class="header-anchor"><a href="#projects" >Проекты</a></div>
+            <div class="header-anchor"><a href="#contacts" >Контакты</a></div>
+        </div>
+    </div>
+</nav>
 
 
 <main>
@@ -118,7 +129,7 @@
                 </div>
             </div>
             <div class="projects-wrap">
-                 <div class="projects-wrap-name">LunGO - мобильное приложение "Мессенджер"</div>
+                <div class="projects-wrap-name">LunGO - мобильное приложение "Мессенджер"</div>
                 <div class="projects-logo">
                     <img src="./img/lungo/logo.jpg"  alt="">
                     <div class="projects-wrap-description">
@@ -163,11 +174,11 @@
         <div class="social">
             <div class="first-col"><span class="footer-header">Социальные сети</span></div>
             <div class="social-flex">
-                <a href="https://www.instagram.com/timau07/" target="_blank"><img src="img/instagram.png" width="50" height="50" alt=""></a>
-                <a href="https://www.vk.com/tim077" target="_blank"><img src="img/VK.png" width="50" height="50" alt=""></a>
-                <a href="https://github.com/utimur" target="_blank"><img src="img/github.png" width="50" height="50" alt=""></a>
-                <a href="mailto:akva_ten@mail.ru" target="_blank"><img src="img/mail.png" width="50" height="50" alt=""></a>
-                <a href="https://profi.ru/profile/UlbiTV/"  target="_blank"><img src="img/profi.png" width="50" height="50" alt=""></a>
+                <a href="https://www.instagram.com/timau07/" target="_blank"><img src="img/instagram.png" alt=""></a>
+                <a href="https://www.vk.com/tim077" target="_blank"><img src="img/VK.png" alt=""></a>
+                <a href="https://github.com/utimur" target="_blank"><img src="img/github.png" alt=""></a>
+                <a href="mailto:akva_ten@mail.ru" target="_blank"><img src="img/mail.png" alt=""></a>
+                <a href="https://profi.ru/profile/UlbiTV/"  target="_blank"><img src="img/profi.png" alt=""></a>
             </div>
         </div>
     </div>
@@ -178,5 +189,6 @@
 <script src="./js/header.js"></script>
 <script src="./js/footer.js"></script>
 <script src="js/presentation.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>
