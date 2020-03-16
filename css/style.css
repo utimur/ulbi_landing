@@ -312,8 +312,8 @@ footer .footer-flex .info-about-me {
     width: 100%;
   }
   .main-flex #skills .skills-box .skills-wrap {
-    width: 120px;
-    height: 120px;
+    width: 25vw;
+    height: 25vw;
   }
   nav .menu a {
     font-size: 20px;
