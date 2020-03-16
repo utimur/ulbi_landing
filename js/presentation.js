@@ -20,7 +20,6 @@ function presentation(img1,img2,img3,imgCount,maxSize,minSize, maxSizeAnim, minS
     const minSizeF = minSize
     const maxSizeAnimF = maxSizeAnim
     const minSizeAnimF= minSizeAnim
-    const name = projectName
 
     img3.onmouseover = () => {
         img3.style.width = minSizeAnimF
@@ -87,16 +86,16 @@ function presentation(img1,img2,img3,imgCount,maxSize,minSize, maxSizeAnim, minS
     };
 }
 
-presentation(img1,img2,img3, imgCount,"512px", "128px", "452px","188px","homeio")
-presentation(lungoImg1,lungoImg2,lungoImg3, imgCount,"512px", "128px", "452px","188px","lungo")
+presentation(img1,img2,img3, imgCount,"40vw", "20vw", "35vw","25vw","homeio")
+presentation(lungoImg1,lungoImg2,lungoImg3, lungoImgCount,"40vw", "20vw", "35vw","25vw","lungo")
 
-if(window.matchMedia('(max-width: 768px)').matches){
-    presentation(img1,img2,img3, imgCount,"192px", "64px", "162px","94px","homeio")
-    presentation(lungoImg1,lungoImg2,lungoImg3, imgCount,"192px", "64px", "162px","94px","lungo")
-}
-if(window.matchMedia('(max-width: 375px)').matches){
-    presentation(img1,img2,img3, imgCount,"168px", "52px", "148px","72px","homeio")
-    presentation(lungoImg1,lungoImg2,lungoImg3, imgCount,"168px", "52px", "148px","72px","lungo")
-}
-
+// if(window.matchMedia('(max-width: 768px)').matches){
+//     presentation(img1,img2,img3, imgCount,"192px", "64px", "162px","94px","homeio")
+//     presentation(lungoImg1,lungoImg2,lungoImg3, lungoImgCount,"192px", "64px", "162px","94px","lungo")
+// }
+// if(window.matchMedia('(max-width: 375px)').matches){
+//     presentation(img1,img2,img3, imgCount,"168px", "52px", "148px","72px","homeio")
+//     presentation(lungoImg1,lungoImg2,lungoImg3, lungoImgCount,"168px", "52px", "148px","72px","lungo")
+// }
+//
 

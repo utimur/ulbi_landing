@@ -89,12 +89,14 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         .projects-logo{
         img{
-          float: left;
+          width: 50vw;
+          height: 50vw;
         }
         padding: 0 @container-margin;
-        width: 80%;
+        width: 100%;
       }
 
         &-name{
@@ -107,7 +109,7 @@ main{
           font-size: 16px;
           font-weight: 500;
           text-align: center;
-          margin: 20px;
+          margin: 20px 0;
           ul{
             list-style: none;
           }
@@ -136,8 +138,18 @@ main{
           #lungo-img-1{
             visibility: hidden;
           }
+          #homeio-img-2{
+            width: 40vw;
+            height: 40vw;
+          }
+          #lungo-img-2{
+            width: 40vw;
+            height: 40vw;
+          }
           img{
             margin: 20px;
+            width: 20vw;
+            height: 20vw;
             transition: width 1000ms, height 1000ms;
           }
         }
@@ -174,8 +186,8 @@ main{
           //visibility: hidden;
         }
         .skills-wrap {
-          width: 196px;
-          height: 196px;
+          width: 15vw;
+          height: 15vw;
           transition-property: height, width;
           transition-duration: 2s;
 
@@ -199,7 +211,7 @@ footer{
 
   .footer-flex{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     padding:10px @container-margin;
     .footer-header {
       margin-bottom: 15px;
@@ -210,6 +222,9 @@ footer{
     }
     .social{
       width: 30%;
+      img{
+        padding: 2px;
+      }
 
     }
     .contacts{
@@ -227,6 +242,7 @@ footer{
 
 
 @media only screen and (max-width: 768px){
+  @container-margin = 0;
   .main-flex{
     #skills{
       .skills-box {
@@ -238,23 +254,22 @@ footer{
       }
     }
     .projects{
-      &-wrap{
-        &-presentation{
-          img{
-            width: 64px;
-            height: 64px;
-            margin: 10px;
-          }
-          #homeio-img-2{
-            width: 192px;
-            height: 192px;
-          }
-          #lungo-img-2{
-            width: 192px;
-            height: 192px;
-          }
-        }
+      &-my{
+        font-size: 50px !important;
       }
+      &-wrap{
+        padding: 0;
+
+      }
+      &-logo{
+        padding: 0;
+        width: 90%;
+      }
+    }
+  }
+  footer{
+    .info-about-me{
+      display: none;
     }
   }
 }
@@ -273,23 +288,16 @@ footer{
     }
     .projects{
       &-wrap{
-        &-presentation{
-          img{
-            width: 52px;
-            height: 52px;
-            margin: 5px;
-          }
-          #homeio-img-2{
-            width: 168px;
-            height: 168px;
-          }
-          #lungo-img-2{
-            width: 168px;
-            height: 168px;
-          }
-        }
+
       }
     }
 
+  }
+
+
+  footer{
+    .footer-flex{
+      flex-direction: column;
+    }
   }
 }

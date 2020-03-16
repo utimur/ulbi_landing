@@ -87,13 +87,15 @@ main .main-flex .projects-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 main .main-flex .projects-wrap .projects-logo {
   padding: 0 50px;
-  width: 80%;
+  width: 100%;
 }
 main .main-flex .projects-wrap .projects-logo img {
-  float: left;
+  width: 50vw;
+  height: 50vw;
 }
 main .main-flex .projects-wrap-name {
   font-size: 45px;
@@ -105,7 +107,7 @@ main .main-flex .projects-wrap-description {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
-  margin: 20px;
+  margin: 20px 0;
 }
 main .main-flex .projects-wrap-description ul {
   list-style: none;
@@ -135,8 +137,18 @@ main .main-flex .projects-wrap-presentation #homeio-img-1 {
 main .main-flex .projects-wrap-presentation #lungo-img-1 {
   visibility: hidden;
 }
+main .main-flex .projects-wrap-presentation #homeio-img-2 {
+  width: 40vw;
+  height: 40vw;
+}
+main .main-flex .projects-wrap-presentation #lungo-img-2 {
+  width: 40vw;
+  height: 40vw;
+}
 main .main-flex .projects-wrap-presentation img {
   margin: 20px;
+  width: 20vw;
+  height: 20vw;
   transition: width 1000ms, height 1000ms;
 }
 main .main-flex .skills {
@@ -170,8 +182,8 @@ main .main-flex .skills .skills-box .skills-discription {
   height: 0;
 }
 main .main-flex .skills .skills-box .skills-wrap {
-  width: 196px;
-  height: 196px;
+  width: 15vw;
+  height: 15vw;
   transition-property: height, width;
   transition-duration: 2s;
 }
@@ -188,7 +200,7 @@ footer {
 }
 footer .footer-flex {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   padding: 10px 50px;
 }
 footer .footer-flex .footer-header {
@@ -201,6 +213,9 @@ footer .footer-flex .footer-header {
 footer .footer-flex .social {
   width: 30%;
 }
+footer .footer-flex .social img {
+  padding: 2px;
+}
 footer .footer-flex .contacts {
   width: 30%;
 }
@@ -211,6 +226,7 @@ footer .footer-flex .info-about-me {
   width: 30%;
 }
 @media only screen and (max-width: 768px) {
+  @container-margin = 0;
   .main-flex #skills .skills-box {
     width: 30%;
   }
@@ -218,18 +234,18 @@ footer .footer-flex .info-about-me {
     width: 120px;
     height: 120px;
   }
-  .main-flex .projects-wrap-presentation img {
-    width: 64px;
-    height: 64px;
-    margin: 10px;
+  .main-flex .projects-my {
+    font-size: 50px !important;
   }
-  .main-flex .projects-wrap-presentation #homeio-img-2 {
-    width: 192px;
-    height: 192px;
+  .main-flex .projects-wrap {
+    padding: 0;
   }
-  .main-flex .projects-wrap-presentation #lungo-img-2 {
-    width: 192px;
-    height: 192px;
+  .main-flex .projects-logo {
+    padding: 0;
+    width: 90%;
+  }
+  footer .info-about-me {
+    display: none;
   }
 }
 @media only screen and (max-width: 375px) {
@@ -240,18 +256,8 @@ footer .footer-flex .info-about-me {
     width: 120px;
     height: 120px;
   }
-  .main-flex .projects-wrap-presentation img {
-    width: 52px;
-    height: 52px;
-    margin: 5px;
-  }
-  .main-flex .projects-wrap-presentation #homeio-img-2 {
-    width: 168px;
-    height: 168px;
-  }
-  .main-flex .projects-wrap-presentation #lungo-img-2 {
-    width: 168px;
-    height: 168px;
+  footer .footer-flex {
+    flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */

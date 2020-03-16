@@ -34,12 +34,18 @@ photo.style.opacity = 1;
 
 
 function skillsAnim(skill_1, skill_2, desc1,desc2) {
-    const max = "256px"
-    const avg = "196px"
-    const min = "136px"
-    const max768 = "150px"
-    const avg768 = "120px"
-    const min768 = "90px"
+    // const max = "256px"
+    // const avg = "196px"
+    // const min = "136px"
+    // const max768 = "150px"
+    // const avg768 = "120px"
+    // const min768 = "90px"
+    const max = "20vw"
+    const avg = "15vw"
+    const min = "10vw"
+    const max768 = "20vw"
+    const avg768 = "15vw"
+    const min768 = "10vw"
     skill_1.onmouseover = () => {
         if(window.matchMedia('(max-width: 768px)').matches){
             skill_1.style.width = max768
