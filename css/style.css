@@ -12,6 +12,10 @@ header .header-flex {
   color: white;
   margin: 0 50px;
 }
+header .header-flex #menu-btn {
+  display: none;
+  visibility: hidden;
+}
 header .header-flex .name {
   font-size: 24px;
   font-weight: 500;
@@ -259,6 +263,10 @@ footer .footer-flex .info-about-me {
   header .header-flex {
     margin: 0 5px;
   }
+  header .header-flex #menu-btn {
+    display: block;
+    visibility: visible;
+  }
   .main-flex #skills .skills-my {
     font-size: 40px;
   }
@@ -266,8 +274,8 @@ footer .footer-flex .info-about-me {
     width: 30%;
   }
   .main-flex #skills .skills-box .skills-wrap {
-    width: 120px;
-    height: 120px;
+    width: 25vw;
+    height: 25vw;
   }
   .main-flex .projects-my {
     font-size: 40px !important;

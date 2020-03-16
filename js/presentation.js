@@ -8,6 +8,8 @@ const lungoImg3 =  document.getElementById("lungo-img-3")
 
 const leftButton = document.getElementById("homeio-left-button")
 const rightButton = document.getElementById("homeio-right-button")
+const lungoLeftButton = document.getElementById("lungo-left-button")
+const lungoRightButton = document.getElementById("lungo-right-button")
 
 var imgCount = 8;
 var lungoImgCount = 14;
@@ -48,10 +50,7 @@ function presentation(img1,img2,img3,imgCount,maxSize,minSize, maxSizeAnim, minS
 
     img3.onclick = () =>{
         clickCount += 1;
-        if (clickCount === imgCount-1) {
-            rightButton.disabled = true;
-        }
-        leftButton.disabled = false;
+
         img1.style.visibility = "visible"
         img1.src = `img/${projectName}/${clickCount}.jpg`
         img2.src = `img/${projectName}/${clickCount+1}.jpg`
@@ -70,10 +69,7 @@ function presentation(img1,img2,img3,imgCount,maxSize,minSize, maxSizeAnim, minS
 
     img1.onclick = () => {
         clickCount -=1;
-        if (clickCount === 0) {
-            leftButton.disabled = true;
-        }
-        rightButton.disabled = false;
+
         img3.style.visibility = "visible"
         img1.src = `img/${projectName}/${clickCount}.jpg`
         img2.src = `img/${projectName}/${clickCount+1}.jpg`
@@ -89,13 +85,52 @@ function presentation(img1,img2,img3,imgCount,maxSize,minSize, maxSizeAnim, minS
 presentation(img1,img2,img3, imgCount,"40vw", "20vw", "35vw","25vw","homeio")
 presentation(lungoImg1,lungoImg2,lungoImg3, lungoImgCount,"40vw", "20vw", "35vw","25vw","lungo")
 
-// if(window.matchMedia('(max-width: 768px)').matches){
-//     presentation(img1,img2,img3, imgCount,"192px", "64px", "162px","94px","homeio")
-//     presentation(lungoImg1,lungoImg2,lungoImg3, lungoImgCount,"192px", "64px", "162px","94px","lungo")
-// }
-// if(window.matchMedia('(max-width: 375px)').matches){
-//     presentation(img1,img2,img3, imgCount,"168px", "52px", "148px","72px","homeio")
-//     presentation(lungoImg1,lungoImg2,lungoImg3, lungoImgCount,"168px", "52px", "148px","72px","lungo")
-// }
-//
+if(window.matchMedia('(max-width: 768px)').matches){
+    console.log("match 768")
+    leftButton.style.visibility = "visible"
+    leftButton.style.display = "block"
+    rightButton.style.visibility = "visible"
+    rightButton.style.display = "block"
+
+    lungoLeftButton.style.visibility = "visible"
+    lungoLeftButton.style.display = "block"
+    lungoRightButton.style.visibility = "visible"
+    lungoRightButton.style.display = "block"
+
+    lungoImg1.style.display = "none"
+    img1.style.display = "none"
+    lungoImg3.style.display = "none"
+    img3.style.display = "none"
+
+    img2.style.width = "70vw"
+    lungoImg2.style.width = "70vw"
+    img2.style.height = "70vw"
+    lungoImg2.style.height = "70vw"
+
+    function buttonClick(btn1, btn2, img,  projectName, imgCount) {
+        var clickCount = 0;
+        btn1.disabled = true
+        btn2.onclick = () =>{
+            clickCount += 1;
+            img.src = `img/${projectName}/${clickCount+1}.jpg`
+            btn1.disabled = false
+            if (clickCount == imgCount)
+            {
+                btn2.disabled = true;
+            }
+        };
+        btn1.onclick = () => {
+            clickCount -=1;
+            img.src = `img/${projectName}/${clickCount+1}.jpg`
+            btn2.disabled = false;
+            if (clickCount == 0)
+            {
+                btn1.disabled = true;
+            }
+        };
+    }
+    buttonClick(leftButton, rightButton, img2, "homeio", imgCount)
+    buttonClick(lungoLeftButton, lungoRightButton, lungoImg2, "lungo", lungoImgCount)
+}
+
 

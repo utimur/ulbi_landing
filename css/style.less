@@ -13,6 +13,10 @@ header {
     align-items: center;
     color: white;
     margin: 0 @container-margin;
+    #menu-btn{
+      display: none;
+      visibility: hidden;
+    }
     .name{
       font-size: 24px;
       font-weight: 500;
@@ -51,6 +55,7 @@ nav{
     background: black;
     transition: 1s;
     transform: translateX(-100%);
+
     &-flex {
       display: flex;
       flex-direction: column;
@@ -162,6 +167,7 @@ main{
             visibility: hidden;
             display: none;
           }
+
           #homeio-img-1{
             visibility: hidden;
           }
@@ -280,6 +286,10 @@ footer{
     }
     .header-flex{
       margin: 0 5px;
+      #menu-btn{
+        display: block;
+        visibility: visible;
+      }
     }
   }
   .main-flex{
@@ -290,8 +300,8 @@ footer{
       .skills-box {
         width: 30%;
         .skills-wrap {
-          width: 120px;
-          height: 120px;
+          width: 25vw;
+          height: 25vw;
         }
       }
     }

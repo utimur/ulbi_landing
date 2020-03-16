@@ -33,31 +33,13 @@ photo.style.opacity = 1;
 
 
 
-function skillsAnim(skill_1, skill_2, desc1,desc2) {
-    // const max = "256px"
-    // const avg = "196px"
-    // const min = "136px"
-    // const max768 = "150px"
-    // const avg768 = "120px"
-    // const min768 = "90px"
-    const max = "20vw"
-    const avg = "15vw"
-    const min = "10vw"
-    const max768 = "20vw"
-    const avg768 = "15vw"
-    const min768 = "10vw"
+function skillsAnim(skill_1, skill_2, desc1,desc2, max, avg,min) {
     skill_1.onmouseover = () => {
-        if(window.matchMedia('(max-width: 768px)').matches){
-            skill_1.style.width = max768
-            skill_1.style.height = max768
-            skill_2.style.width = min768
-            skill_2.style.height = min768
-        } else {
-            skill_1.style.width = max
-            skill_1.style.height = max
-            skill_2.style.width = min
-            skill_2.style.height = min
-        }
+
+        skill_1.style.width = max
+        skill_1.style.height = max
+        skill_2.style.width = min
+        skill_2.style.height = min
         desc1.style.height = "100%"
         desc1.style.opacity = 1
 
@@ -65,33 +47,21 @@ function skillsAnim(skill_1, skill_2, desc1,desc2) {
         desc2.style.opacity = 0
     }
     skill_1.onmouseout = () => {
-        if(window.matchMedia('(max-width: 768px)').matches){
-            skill_1.style.width = avg768
-            skill_1.style.height = avg768
-            skill_2.style.width = avg768
-            skill_2.style.height = avg768
-        } else {
-            skill_1.style.width = avg
-            skill_1.style.height = avg
-            skill_2.style.width = avg
-            skill_2.style.height = avg
-        }
+
+        skill_1.style.width = avg
+        skill_1.style.height = avg
+        skill_2.style.width = avg
+        skill_2.style.height = avg
 
         desc2.style.height = 0
         desc2.style.opacity = 0
     }
     skill_2.onmouseover = () => {
-        if(window.matchMedia('(max-width: 768px)').matches){
-            skill_2.style.width = max768
-            skill_2.style.height = max768
-            skill_1.style.width = min768
-            skill_1.style.height = min768
-        } else {
-            skill_2.style.width = max
-            skill_2.style.height = max
-            skill_1.style.width = min
-            skill_1.style.height = min
-        }
+
+        skill_2.style.width = max
+        skill_2.style.height = max
+        skill_1.style.width = min
+        skill_1.style.height = min
         desc2.style.height = "100%"
         desc2.style.opacity = 1
 
@@ -99,26 +69,29 @@ function skillsAnim(skill_1, skill_2, desc1,desc2) {
         desc1.style.opacity = 0
     }
     skill_2.onmouseout = () => {
-        if(window.matchMedia('(max-width: 768px)').matches){
-            skill_1.style.width = avg768
-            skill_1.style.height = avg768
-            skill_2.style.width = avg768
-            skill_2.style.height = avg768
-        } else {
-            skill_1.style.width = avg
-            skill_1.style.height = avg
-            skill_2.style.width = avg
-            skill_2.style.height = avg
-        }
+
+        skill_1.style.width = avg
+        skill_1.style.height = avg
+        skill_2.style.width = avg
+        skill_2.style.height = avg
 
         desc1.style.height = 0
         desc1.style.opacity = 0
     }
 }
 
-skillsAnim(react,redux, react_description, redux_description)
-skillsAnim(javascript,java, javascript_description, java_description)
-skillsAnim(css,spring,css_description,spring_description)
-skillsAnim(python,flask,python_description, flask_description)
-skillsAnim(linux,sql,linux_description, sql_description)
+skillsAnim(react,redux, react_description, redux_description, "20vw", "15vw", '10vw')
+skillsAnim(javascript,java, javascript_description, java_description, "20vw", "15vw", '10vw')
+skillsAnim(css,spring,css_description,spring_description, "20vw", "15vw", '10vw')
+skillsAnim(python,flask,python_description, flask_description, "20vw", "15vw", '10vw')
+skillsAnim(linux,sql,linux_description, sql_description, "20vw", "15vw", '10vw')
 
+
+if(window.matchMedia('(max-width: 768px)').matches){
+
+    skillsAnim(react,redux, react_description, redux_description, "30vw", "25vw", '20vw')
+    skillsAnim(javascript,java, javascript_description, java_description, "30vw", "25vw", '20vw')
+    skillsAnim(css,spring,css_description,spring_description, "30vw", "25vw", '20vw')
+    skillsAnim(python,flask,python_description, flask_description, "30vw", "25vw", '20vw')
+    skillsAnim(linux,sql,linux_description, sql_description, "30vw", "25vw", '20vw')
+}
