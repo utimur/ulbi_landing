@@ -102,10 +102,10 @@ if(window.matchMedia('(max-width: 768px)').matches){
     lungoImg3.style.display = "none"
     img3.style.display = "none"
 
-    img2.style.width = "70vw"
-    lungoImg2.style.width = "70vw"
-    img2.style.height = "70vw"
-    lungoImg2.style.height = "70vw"
+    img2.style.width = "60vw"
+    lungoImg2.style.width = "60vw"
+    img2.style.height = "60vw"
+    lungoImg2.style.height = "60vw"
 
     function buttonClick(btn1, btn2, img,  projectName, imgCount) {
         var clickCount = 0;

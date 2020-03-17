@@ -151,14 +151,27 @@ main .main-flex .projects-wrap-presentation {
   padding: 60px 0;
 }
 main .main-flex .projects-wrap-presentation .projects-btn {
-  border-radius: 100px;
-  background-color: #f09700;
-  color: white;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   text-align: center;
   border: none;
-  padding: 20px;
   visibility: hidden;
   display: none;
+}
+main .main-flex .projects-wrap-presentation #homeio-left-button,
+main .main-flex .projects-wrap-presentation #lungo-left-button {
+  background-image: url("../img/left.png");
+}
+main .main-flex .projects-wrap-presentation #homeio-right-button,
+main .main-flex .projects-wrap-presentation #lungo-right-button {
+  background-image: url("../img/right.png");
 }
 main .main-flex .projects-wrap-presentation #homeio-img-1 {
   visibility: hidden;
@@ -267,6 +280,12 @@ footer .footer-flex .info-about-me {
     display: block;
     visibility: visible;
   }
+  main {
+    width: 100%;
+  }
+  .main-flex {
+    width: 100%;
+  }
   .main-flex #skills .skills-my {
     font-size: 40px;
   }
@@ -277,8 +296,12 @@ footer .footer-flex .info-about-me {
     width: 25vw;
     height: 25vw;
   }
+  .main-flex .projects {
+    width: 100% !important;
+  }
   .main-flex .projects-my {
     font-size: 40px !important;
+    padding: 0 !important;
   }
   .main-flex .projects-wrap {
     padding: 0;
@@ -287,25 +310,24 @@ footer .footer-flex .info-about-me {
     font-size: 35px !important;
   }
   .main-flex .projects-logo {
-    padding: 0;
-    width: 90%;
+    padding: 0 !important;
   }
-  nav .menu {
-    width: 50%;
-  }
-  footer .info-about-me {
-    display: none;
-  }
-  footer .contacts {
-    display: none;
-  }
-  footer .social {
-    width: 100% !important;
-  }
-  footer .social img {
-    width: 40px !important;
-    height: 40px !important;
-  }
+}
+nav .menu {
+  width: 50%;
+}
+footer .info-about-me {
+  display: none;
+}
+footer .contacts {
+  display: none;
+}
+footer .social {
+  width: 100% !important;
+}
+footer .social img {
+  width: 40px !important;
+  height: 40px !important;
 }
 @media only screen and (max-width: 375px) {
   .main-flex #skills .skills-box {
@@ -314,6 +336,9 @@ footer .footer-flex .info-about-me {
   .main-flex #skills .skills-box .skills-wrap {
     width: 25vw;
     height: 25vw;
+  }
+  .main-flex .projects-my {
+    font-size: 40px !important;
   }
   nav .menu a {
     font-size: 20px;
