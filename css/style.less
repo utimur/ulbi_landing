@@ -1,6 +1,9 @@
 @header-height: 70px;
 @container-margin: 50px;
 
+body{
+}
+
 header {
   background-color: black;
   height: @header-height;
@@ -227,7 +230,7 @@ main{
           font-weight: 700;
           padding: 20px 0;
           opacity: 0;
-          transition: opacity 1500ms;
+          transition: opacity 1500ms, height 1500ms;
           height: 0;
           //visibility: hidden;
         }
@@ -348,35 +351,38 @@ footer{
       }
     }
   }
-}
-nav{
-  .menu{
-    width: 50%;
+  footer{
+    .info-about-me{
+      display: none;
+    }
+    .contacts{
+      display: none;
+    }
+    .social {
+      width: 100% !important;
+      img{
+        width: 40px !important;
+        height: 40px !important;
+      }
+    }
+
   }
-}
-footer{
-  .info-about-me{
-    display: none;
-  }
-  .contacts{
-    display: none;
-  }
-  .social {
-    width: 100% !important;
-    img{
-      width: 40px !important;
-      height: 40px !important;
+  nav{
+    .menu{
+      width: 50%;
     }
   }
-
 }
+
+
 
 
 @media only screen and (max-width: 375px){
   .main-flex{
     #skills{
       .skills-box {
-        width: 100%;
+        width: 45%;
+        margin: 0;
         .skills-wrap {
           width: 25vw;
           height: 25vw;

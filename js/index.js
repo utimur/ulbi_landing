@@ -80,18 +80,22 @@ function skillsAnim(skill_1, skill_2, desc1,desc2, max, avg,min) {
     }
 }
 
-skillsAnim(react,redux, react_description, redux_description, "20vw", "15vw", '10vw')
-skillsAnim(javascript,java, javascript_description, java_description, "20vw", "15vw", '10vw')
-skillsAnim(css,spring,css_description,spring_description, "20vw", "15vw", '10vw')
-skillsAnim(python,flask,python_description, flask_description, "20vw", "15vw", '10vw')
-skillsAnim(linux,sql,linux_description, sql_description, "20vw", "15vw", '10vw')
-
-
 if(window.matchMedia('(max-width: 768px)').matches){
-    skillsAnim(react,redux, react_description, redux_description, "30vw", "25vw", '20vw')
     skillsAnim(javascript,java, javascript_description, java_description, "30vw", "25vw", '20vw')
+    skillsAnim(react,redux, react_description, redux_description, "30vw", "25vw", '20vw')
     skillsAnim(css,spring,css_description,spring_description, "30vw", "25vw", '20vw')
     skillsAnim(python,flask,python_description, flask_description, "30vw", "25vw", '20vw')
     skillsAnim(linux,sql,linux_description, sql_description, "30vw", "25vw", '20vw')
     console.log("index 768")
 }
+
+if(window.matchMedia('(min-width: 768px)').matches) {
+    console.log("index 1400")
+
+    skillsAnim(react, redux, react_description, redux_description, "20vw", "15vw", '10vw')
+    skillsAnim(javascript, java, javascript_description, java_description, "20vw", "15vw", '10vw')
+    skillsAnim(css, spring, css_description, spring_description, "20vw", "15vw", '10vw')
+    skillsAnim(python, flask, python_description, flask_description, "20vw", "15vw", '10vw')
+    skillsAnim(linux, sql, linux_description, sql_description, "20vw", "15vw", '10vw')
+}
+

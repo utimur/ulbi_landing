@@ -108,25 +108,28 @@ if(window.matchMedia('(max-width: 768px)').matches){
     lungoImg2.style.height = "60vw"
 
     function buttonClick(btn1, btn2, img,  projectName, imgCount) {
-        var clickCount = 0;
+        var clickCount = 1;
         btn1.disabled = true
         btn2.onclick = () =>{
             clickCount += 1;
-            img.src = `img/${projectName}/${clickCount+1}.jpg`
             btn1.disabled = false
             if (clickCount == imgCount)
             {
                 btn2.disabled = true;
             }
+            img.src = `img/${projectName}/${clickCount}.jpg`
+            console.log(clickCount)
         };
         btn1.onclick = () => {
             clickCount -=1;
-            img.src = `img/${projectName}/${clickCount+1}.jpg`
             btn2.disabled = false;
-            if (clickCount == 0)
+            if (clickCount == 1)
             {
                 btn1.disabled = true;
             }
+            img.src = `img/${projectName}/${clickCount}.jpg`
+            console.log(clickCount)
+
         };
     }
     buttonClick(leftButton, rightButton, img2, "homeio", imgCount)

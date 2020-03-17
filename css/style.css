@@ -220,7 +220,7 @@ main .main-flex .skills .skills-box .skills-discription {
   font-weight: 700;
   padding: 20px 0;
   opacity: 0;
-  transition: opacity 1500ms;
+  transition: opacity 1500ms, height 1500ms;
   height: 0;
 }
 main .main-flex .skills .skills-box .skills-wrap {
@@ -312,26 +312,27 @@ footer .footer-flex .info-about-me {
   .main-flex .projects-logo {
     padding: 0 !important;
   }
-}
-nav .menu {
-  width: 50%;
-}
-footer .info-about-me {
-  display: none;
-}
-footer .contacts {
-  display: none;
-}
-footer .social {
-  width: 100% !important;
-}
-footer .social img {
-  width: 40px !important;
-  height: 40px !important;
+  footer .info-about-me {
+    display: none;
+  }
+  footer .contacts {
+    display: none;
+  }
+  footer .social {
+    width: 100% !important;
+  }
+  footer .social img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  nav .menu {
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 375px) {
   .main-flex #skills .skills-box {
-    width: 100%;
+    width: 45%;
+    margin: 0;
   }
   .main-flex #skills .skills-box .skills-wrap {
     width: 25vw;
